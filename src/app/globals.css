@@ -2,25 +2,119 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-rgb: 214, 219, 220;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-rgb: 40, 44, 51;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
-}
-
+/* Contact CSS Button */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.bg-button {
+  --c:  #C778DD;
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+  outline-offset: .1em;
+  transition: background-size .3s, background-position 0s .3s;
+}
+.bg-button:hover {
+  --_p: 100%;
+  transition: background-position .3s, background-size 0s;
+}
+
+/* Underline CSS Animation */
+.underline {
+	color: #C778DD;
+  position: relative;
+  text-decoration: none;
+}
+
+.underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #C778DD;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.underline:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+
+/* Shine CSS Animation */
+.btn-shine {
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  background: linear-gradient(to right, #C778DD 0%, white 10%, #C778DD 20%);
+  background-size: 200% 100%;
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Arrow to Scroll CSS Button */
+.arrow {
+  transform: translate(-50%, -50%);
+  transform: rotate(00deg);
+  cursor: pointer;
+}
+
+.arrow span {
+  display: block;
+  width: 1.2vw;
+  height: 1.2vw;
+  border-bottom: 5px solid #C778DD;
+  border-right: 5px solid #C778DD;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
   }
 }
