@@ -18,7 +18,7 @@ export const HeaderNavs: HeaderNav[] = [
   },
   {
     id: 4,
-    value: "#contacts",
-    href: "/contacts",
+    value: "#contact",
+    href: "/contact",
   },
 ];

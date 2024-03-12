@@ -9,7 +9,7 @@ const Header = () => {
     <header className="flex items-center justify-between p-4">
       <Brand />
       <nav>
-        <ul className="flex items-center space-x-8">
+        <ul className="flex items-center flex-row space-x-2 md:space-x-8">
           {HeaderNavs.map((nav) => (
             <HeaderLinks
               value={nav.value}

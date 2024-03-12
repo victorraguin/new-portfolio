@@ -88,8 +88,8 @@
 
 .arrow span {
   display: block;
-  width: 1.2vw;
-  height: 1.2vw;
+  width: 1.5rem;
+  height: 1.5rem;
   border-bottom: 5px solid #C778DD;
   border-right: 5px solid #C778DD;
   transform: rotate(45deg);

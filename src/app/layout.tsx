@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
-import Header from "@/app/components/header";
 import "./globals.css";
 import SocialsList from "./components/Socials";
 import AppTheme from "./utils/AppTheme";
+import Header from "./components/Header";
 
 const firaCode = Fira_Code({ subsets: ["latin"] });
 
@@ -45,18 +45,18 @@ export default function RootLayout({
   return (
 <html lang="en" >
   <AppTheme >
-  <body className={`${firaCode.className} + bg-white dark:bg-dark text-dark dark:text-gray `}>
-    <div className="flex flex-row justify-center">
-      <div className="w-1/6">
+  <body className={`${firaCode.className} + bg-white dark:bg-dark text-dark dark:text-gray h-screen w-full`}>
+    <div className="md:flex flex-row justify-center">
+      <div className="hidden md:flex w-1/6 md:w-[40%] lg:w-1/6 4xl:w-1/3 5xl:w-1/2 md:justify-center">
         <SocialsList />
       </div>
       <div className="flex flex-col flex-grow">
         <Header />
-        <div className="flex flex-row justify-between">
+        <div className="md:flex flex-row justify-between">
           {children}
         </div>
       </div>
-      <div className="w-1/6 text-right">
+      <div className="md:w-1/12 lg:w-1/6 4xl:w-1/3 5xl:w-1/2 text-right">
       </div>
     </div>
   </body>
