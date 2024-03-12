@@ -3,6 +3,7 @@ import React from "react";
 import VictorImg from "@/app/public/Victor.png";
 import Image from "next/image";
 import SocialsList from "../Socials";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -62,6 +63,7 @@ const HeroSection = () => {
           “
         </span>
       </div>
+      <Link href="#projects">
       <div className="hidden arrow md:inline absolute bottom-12 left-[50%] cursor-pointer">
         <span></span>
         <span></span>
@@ -70,6 +72,7 @@ const HeroSection = () => {
       <div className="arrow absolute md:hidden bottom-12 left-[50%] cursor-pointer">
         <span></span>
       </div>
+      </Link>
     </div>
   );
 };
