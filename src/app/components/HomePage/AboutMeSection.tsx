@@ -4,7 +4,7 @@ import Image from "next/image";
 import VictorFullImg from "../../public/victorraguin.jpg";
 const AboutMeSection = () => {
   return (
-    <div className="bg-gray-900 text-dark dark:text-white flex flex-col md:pt-20 px-6 space-y-6 lg:w-3/4 xl:w-full h-[100vh] pt-10">
+    <div className="bg-gray-900 text-dark dark:text-white flex flex-col md:pt-20 px-6 space-y-6 lg:w-3/4 xl:w-full pt-10">
       <h2 className="text-xl md:text-2xl font-semibold md:mb-2 lg:w-3/4">
         #
         <strong id="aboutme" className="text-pink btn-shine">
