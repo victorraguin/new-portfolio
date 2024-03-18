@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -26,7 +25,7 @@ const ProjectsSection = () => {
 
   return (
     <div>
-      <div className="bg-gray-900 text-dark dark:text-white flex flex-col md:pt-20 px-6 space-y-6 lg:w-3/4 xl:w-full mt-[21vh] lg:mt-[51vh] 4xl:mt-[70vh] h-[100vh]">
+      <div className="bg-gray-900 text-dark dark:text-white flex flex-col md:pt-20 px-6 space-y-6 lg:w-3/4 xl:w-full mt-[21vh] lg:mt-[51vh] 4xl:mt-[70vh]">
         <h2
           id="projects"
           className="text-xl md:text-2xl font-semibold md:mb-2 lg:w-3/4">
@@ -59,6 +58,15 @@ const ProjectsSection = () => {
             </div>
           ))}
         </div>
+          <Link href="#aboutme" className="self-center pt-10">
+            <div className="hidden arrow md:inline  cursor-pointer">
+              <span></span>
+              <span></span>
+            </div>
+            <div className="arrow absolute md:hidden cursor-pointer">
+              <span></span>
+            </div>
+          </Link>
       </div>
     </div>
   );

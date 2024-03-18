@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const SocialsList = () => {
   return (
-    <div className="flex flex-row md:flex-col items-center 4xl:float-end 4xl:mr-5">
+    <div className="flex flex-row md:flex-col items-center 4xl:float-end 4xl:mr-5 md:fixed md:top-0 md:z-50">
       <div className="hidden md:flex h-[200px] bg-dark dark:bg-gray w-[1px] "></div>
       <div className="flex flex-row justify-around md:flex-col items-center md:mt-4">
         <a href="#" className="mx-4">

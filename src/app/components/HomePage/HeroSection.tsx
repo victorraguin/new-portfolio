@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
 import VictorImg from "@/app/public/Victor.png";
 import Image from "next/image";
 import SocialsList from "../Socials";
@@ -63,15 +62,14 @@ const HeroSection = () => {
           “
         </span>
       </div>
-      <Link href="#projects">
-      <div className="hidden arrow md:inline absolute bottom-12 left-[50%] cursor-pointer">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div className="arrow absolute md:hidden bottom-12 left-[50%] cursor-pointer">
-        <span></span>
-      </div>
+      <Link href="#projects" className="self-center pt-10">
+        <div className="hidden arrow md:inline absolute bottom-12 left-[50%] cursor-pointer">
+          <span></span>
+          <span></span>
+        </div>
+        <div className="arrow absolute md:hidden bottom-12 left-[50%] cursor-pointer">
+          <span></span>
+        </div>
       </Link>
     </div>
   );
