@@ -37,7 +37,7 @@ const ThemeSelector: React.FC = () => {
         }}
         className={` ${theme === "dark" ? "hidden" : "flex"} items-center`}>
         <svg
-          className="flex-shrink-0 size-4 hover:text-pink dark:hover:text-dark"
+          className="flex-shrink-0 size-4 hover:text-main dark:hover:text-dark"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -58,7 +58,7 @@ const ThemeSelector: React.FC = () => {
         }}
         className={` ${theme === "dark" ? "flex" : "hidden"} items-center `}>
         <svg
-          className="flex-shrink-0 size-4 hover:text-dark dark:hover:text-white"
+          className="flex-shrink-0 size-4 hover:text-dark dark:hover:text-main"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"

@@ -29,8 +29,8 @@ const ProjectsSection = () => {
         <h2
           id="projects"
           className="text-xl md:text-2xl font-semibold md:mb-2 lg:w-3/4">
-          #<strong className="text-pink btn-shine">projects</strong>
-          <div className="flex w-3/4 bg-pink dark:bg-pink h-[2px] mt-1"></div>
+          #<strong className="text-main btn-shine">projects</strong>
+          <div className="flex w-3/4 bg-main dark:bg-main h-[2px] mt-1"></div>
         </h2>
         <div className="flex flex-row flex-wrap pt-10 justify-around items-center w-full">
           {projects.map((project) => (
@@ -51,7 +51,7 @@ const ProjectsSection = () => {
               <div className="flex flex-col my-4 mx-auto">
                 <Link
                   href={project.link}
-                  className="w-fit bg-button mx-auto border-pink border font-bold py-2 px-4 shadow shadow-gray dark:shadow-black">
+                  className="w-fit bg-button mx-auto border-main border font-bold py-2 px-4 shadow shadow-gray dark:shadow-black">
                   View Project
                 </Link>
               </div>

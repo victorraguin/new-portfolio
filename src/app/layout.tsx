@@ -45,7 +45,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <AppTheme>
         <body
-          className={`${firaCode.className} + bg-white dark:bg-dark text-dark dark:text-gray h-screen w-full`}>
+          className={`${firaCode.className} + bg-white dark:bg-dark text-dark dark:text-white h-screen w-full`}>
           <div className="md:flex flex-row justify-center">
             <div className="hidden md:flex w-1/6 md:w-[40%] lg:w-1/6 4xl:w-1/3 5xl:w-1/2 md:justify-center 4xl:justify-end">
               <SocialsList />

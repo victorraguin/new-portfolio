@@ -45,7 +45,7 @@ const config: Config = {
       },
     },
     colors: {
-      'pink': '#C778DD',
+      'main': '#ffb400',
       'white': '#FFFFFF',
       'gray': '#ABB2BF',
       'dark' : '#282C33',
