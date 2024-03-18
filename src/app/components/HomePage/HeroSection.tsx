@@ -46,11 +46,11 @@ const HeroSection = () => {
           Currently working on <span className="mx-2 text-main">Portfolio</span>
         </div>
       </div>
-      <div className="dark:text-white text-dark w-full lg:w-1/2 hidden lg:absolute bottom-28 3xl:bottom-40 5xl:w-1/4 5xl:left-[38%] 5xl:bottom-56 left-[25%] mx-auto shadow-md shadow-gray dark:shadow-black md:flex flex-row items-center justify-center border border-dark dark:border-gray">
+      <div className="w-full lg:w-1/2 hidden lg:absolute bottom-28 3xl:bottom-40 5xl:w-1/4 5xl:left-[38%] 5xl:bottom-56 left-[25%] mx-auto shadow shadow-gray dark:shadow-black md:flex flex-row items-center justify-center border border-dark dark:border-gray">
         <span className="text-[3rem] text-main dark:text-main self-start relative -top-6 -right-6 bg-white dark:bg-dark">
           “
         </span>
-        <div className="flex flex-col w-full justify-center items-center 2xl:w-3/4 ">
+        <div className="flex flex-col w-full justify-center items-center 2xl:w-3/4">
           <p className="text-lg">
             First, solve the problem. Then, write the code.
           </p>

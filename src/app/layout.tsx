@@ -4,6 +4,7 @@ import "./globals.css";
 import SocialsList from "./components/Socials";
 import AppTheme from "./utils/AppTheme";
 import Header from "./components/Header";
+import AnimatedCursor from "react-animated-cursor";
 
 const firaCode = Fira_Code({ subsets: ["latin"] });
 
@@ -58,6 +59,14 @@ export default function RootLayout({
           </div>
         </body>
       </AppTheme>
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={44}
+        color="255, 160, 1"
+        outerAlpha={0.3}
+        innerScale={0.7}
+        outerScale={1.2}
+      />
     </html>
   );
 }
