@@ -25,12 +25,12 @@ const ProjectsSection = () => {
 
   return (
     <div>
-      <div className="bg-gray-900 text-dark dark:text-white flex flex-col md:pt-20 px-6 space-y-6 lg:w-3/4 xl:w-full mt-[21vh] lg:mt-[51vh] 4xl:mt-[70vh]">
+      <div className="flex flex-col md:pt-20 px-6 space-y-6 lg:w-3/4 xl:w-full mt-[21vh] lg:mt-[51vh] 4xl:mt-[70vh]">
         <h2
           id="projects"
           className="text-xl md:text-2xl font-semibold md:mb-2 lg:w-3/4">
           #<strong className="text-main btn-shine">projects</strong>
-          <div className="flex w-3/4 bg-main dark:bg-main h-[2px] mt-1"></div>
+          <div className="flex w-3/4 bg-main h-[2px] mt-1"></div>
         </h2>
         <div className="flex flex-row flex-wrap pt-10 justify-around items-center w-full">
           {projects.map((project) => (
@@ -58,15 +58,15 @@ const ProjectsSection = () => {
             </div>
           ))}
         </div>
-          <Link href="#aboutme" className="self-center pt-10">
-            <div className="hidden arrow md:inline  cursor-pointer">
-              <span></span>
-              <span></span>
-            </div>
-            <div className="arrow absolute md:hidden cursor-pointer">
-              <span></span>
-            </div>
-          </Link>
+        <Link href="#aboutme" className="self-center pt-10">
+          <div className="hidden arrow md:inline  cursor-pointer">
+            <span></span>
+            <span></span>
+          </div>
+          <div className="arrow absolute md:hidden cursor-pointer">
+            <span></span>
+          </div>
+        </Link>
       </div>
     </div>
   );
