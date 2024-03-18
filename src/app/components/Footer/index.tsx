@@ -1,7 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import Image from "next/image";
-import EmailIcon from "../Icons/email.svg";
 import Link from "next/link";
 const Footer = () => {
   return (

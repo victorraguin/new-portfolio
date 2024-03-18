@@ -1,7 +1,4 @@
 /* eslint-disable react/jsx-no-undef */
-import GithubIcon from "../Icons/github.svg";
-import LinkedInIcon from "../Icons/linkedin.svg";
-import Image from "next/image";
 
 const SocialsList = () => {
   return (
