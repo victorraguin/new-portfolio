@@ -4,7 +4,6 @@ import "./globals.css";
 import SocialsList from "./components/Socials";
 import AppTheme from "./utils/AppTheme";
 import Header from "./components/Header";
-import AnimatedCursor from "react-animated-cursor";
 
 const firaCode = Fira_Code({ subsets: ["latin"] });
 
@@ -46,7 +45,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <AppTheme>
         <body
-          className={`${firaCode.className} + bg-white dark:bg-dark text-dark dark:text-white h-screen w-full`}>
+          className={`${firaCode.className} + bg-white dark:bg-black text-dark dark:text-white h-screen w-full`}>
           <div className="md:flex flex-row justify-center">
             <div className="hidden md:flex w-1/6 md:w-[40%] lg:w-1/6 4xl:w-1/3 5xl:w-1/2 md:justify-center 4xl:justify-end">
               <SocialsList />
@@ -59,14 +58,6 @@ export default function RootLayout({
           </div>
         </body>
       </AppTheme>
-      <AnimatedCursor
-        innerSize={8}
-        outerSize={44}
-        color="255, 160, 1"
-        outerAlpha={0.3}
-        innerScale={0.7}
-        outerScale={1.2}
-      />
     </html>
   );
 }

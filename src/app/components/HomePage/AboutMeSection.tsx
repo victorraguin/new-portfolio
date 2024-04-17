@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import Image from "next/image";
-import VictorFullImg from "../../public/victorraguin.jpg";
+import VictorFullImg from "@/public/victorraguin.jpg";
 const AboutMeSection = () => {
   return (
     <div className="flex flex-col md:pt-20 px-6 space-y-6 lg:w-3/4 xl:w-full pt-10">
@@ -18,7 +18,7 @@ const AboutMeSection = () => {
             Hello, I'm Victor!
           </strong>
           <p className="pt-5">
-            I'm a front-end developer based in Nantes, France. I can develop
+            I'm a front-end developer based in Chaumes-en-Retz (44320), France . I can develop
             responsive websites from scratch and raise them into modern
             user-fiendly web experiences.
           </p>

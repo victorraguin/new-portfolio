@@ -51,7 +51,7 @@ const ProjectsSection = () => {
               <div className="flex flex-col my-4 mx-auto">
                 <Link
                   href={project.link}
-                  className="w-fit bg-button mx-auto border-main border font-bold py-2 px-4 shadow shadow-gray dark:shadow-black">
+                  className="w-fit button type1 mx-auto border-main border font-bold py-2 px-4">
                   View Project
                 </Link>
               </div>
@@ -60,7 +60,6 @@ const ProjectsSection = () => {
         </div>
         <Link href="#aboutme" className="self-center pt-10">
           <div className="hidden arrow md:inline  cursor-pointer">
-            <span></span>
             <span></span>
           </div>
           <div className="arrow absolute md:hidden cursor-pointer">
