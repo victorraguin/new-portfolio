@@ -12,7 +12,7 @@ const HeroSection = () => {
         <h1 className="text-3xl md:text-5xl font-bold md:mb-2 lg:w-3/4">
           Victor is a <Script src="/typewriter.js" defer></Script>
           <div>
-            <span id="text" className="text-main underline"></span>
+            <span id="text" className="text-main underline btn-shine"></span>
             <span className="cursor">|</span>
           </div>
         </h1>
