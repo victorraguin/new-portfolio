@@ -13,7 +13,7 @@ const SelectLanguage = () => {
     
     return (
         <li>
-        <select value={language} onChange={handleLanguageChange} className="text-dark dark:text-gray bg-white dark:bg-dark py-3 pr-1">
+        <select value={language} onChange={handleLanguageChange} className="text-dark dark:text-gray bg-[#faeee1] dark:bg-dark py-3 pr-1">
           <option value="EN" className="">EN</option>
           <option value="FR">FR</option>
         </select>

@@ -3,7 +3,7 @@ import { Fira_Code } from "next/font/google";
 import "./globals.css";
 import SocialsList from "./components/Socials";
 import AppTheme from "./utils/AppTheme";
-import Header from "../app/components/header/index";
+import Header from "./components/HeaderTemp/index";
 
 const firaCode = Fira_Code({ subsets: ["latin"] });
 
@@ -45,7 +45,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <AppTheme>
         <body
-          className={`${firaCode.className} + bg-white dark:bg-black text-dark dark:text-white h-screen w-full`}>
+          className={`${firaCode.className} + bg-[#faeee1] dark:bg-black text-dark dark:text-white h-screen w-full`}>
           <div className="md:flex flex-row justify-center">
             <div className="hidden md:flex w-1/6 md:w-[40%] lg:w-1/6 4xl:w-1/3 5xl:w-1/2 md:justify-center 4xl:justify-end">
               <SocialsList />

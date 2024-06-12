@@ -37,7 +37,7 @@
 
 .button.type1::after,
 .button.type1::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 25%;
@@ -52,7 +52,7 @@
   right: 0;
   border-top-color: transparent;
   border-left-color: transparent;
-  border-bottom-color: #ffb400; /* Using CSS variable */
+  border-bottom-color: #ffb400;
   border-right-color: #ffb400;
 }
 
@@ -84,11 +84,12 @@ strong {
 }
 
 @keyframes blink {
-  0%, 100% {
-      opacity: 1;
+  0%,
+  100% {
+    opacity: 1;
   }
   50% {
-      opacity: 0;
+    opacity: 0;
   }
 }
 
@@ -182,9 +183,9 @@ strong {
     transform: rotate(45deg) translate(20px, 20px);
   }
 }
-
+/* Scroll Down CSS Button */
 .scroll-downs {
-  width :34px;
+  width: 34px;
   height: 55px;
 }
 .mousey {
@@ -203,77 +204,105 @@ strong {
   background-color: #ffb400;
   animation-name: scroll;
   animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
   animation-iteration-count: infinite;
 }
 @keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(15px); opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
 }
 
 @property --angle {
-  syntax: '<angle>';
+  syntax: "<angle>";
   initial-value: 90deg;
   inherits: true;
 }
 
 @property --gradX {
-  syntax: '<percentage>';
+  syntax: "<percentage>";
   initial-value: 50%;
   inherits: true;
 }
 
 @property --gradY {
-  syntax: '<percentage>';
+  syntax: "<percentage>";
   initial-value: 0%;
   inherits: true;
 }
 
+/* Border Gradient Animation */
 :root {
-	--d: 5000ms;
-	--angle: 90deg;
-	--gradX: 100%;
-	--gradY: 50%;
-	--c1: rgb(247, 202, 0);
-	--c2: #a8efff1a;
+  --d: 5000ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgb(247, 202, 0);
+  --c2: #a8efff1a;
 }
 
 .wrapper {
-	min-width: min(40rem, 100%);
+  min-width: min(40rem, 100%);
 }
 
 .box {
-	border: 0.1rem solid;
-	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
-	animation: borderRotate var(--d) linear infinite forwards;
+  border: 0.1rem solid;
+  border-image: conic-gradient(
+      from var(--angle),
+      var(--c2),
+      var(--c1) 0.2turn,
+      var(--c1) 0.15turn,
+      var(--c2) 0.3turn
+    )
+    30;
+  animation: borderRotate var(--d) linear infinite forwards;
 }
 
 @keyframes borderRotate {
-	100% {
-		--angle: 420deg;
-	}
+  100% {
+    --angle: 450deg;
+  }
 }
 
 @keyframes borderRadial {
-	20% {
-		--gradX: 100%;
-		--gradY: 50%;
-	}
-	40% {
-		--gradX: 100%;
-		--gradY: 100%;
-	}
-	60% {
-		--gradX: 50%;
-		--gradY: 100%;
-	}
-	80% {
-		--gradX: 0%;
-		--gradY: 50%;
-	}
-	100% {
-		--gradX: 50%;
-		--gradY: 0%;
-	}
+  20% {
+    --gradX: 100%;
+    --gradY: 50%;
+  }
+  40% {
+    --gradX: 100%;
+    --gradY: 100%;
+  }
+  60% {
+    --gradX: 50%;
+    --gradY: 100%;
+  }
+  80% {
+    --gradX: 0%;
+    --gradY: 50%;
+  }
+  100% {
+    --gradX: 50%;
+    --gradY: 0%;
+  }
+}
+
+@keyframes float-icons {
+  0%, 100% {
+      transform: translateY(5px);
+  }
+  50% {
+      transform: translateY(10px);
+  }
+}
+.animate-float-icons {
+  animation: float-icons 3s ease-in-out infinite;
 }

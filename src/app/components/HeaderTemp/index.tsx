@@ -6,7 +6,7 @@ import ThemeSelector from "./user-actions/ThemeSelector";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between p-4">
+    <header className="flex items-center justify-between sm:p-4 self-center sm:self-auto my-4 sm:my-0">
       <Brand />
       <nav>
         <ul className="flex items-center flex-row space-x-2 md:space-x-8">

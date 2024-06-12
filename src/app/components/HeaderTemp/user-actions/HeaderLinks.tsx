@@ -20,7 +20,7 @@ const HeaderLinks: FC<HeaderLinksProps> = ({ value, href }) => {
               route === href
                 ? " dark:text-white cursor-default"
                 : "text-dark dark:text-gray"
-            } dark:hover:text-white text-lg `}>
+            } dark:hover:text-white text-[1rem] `}>
             <span className="text-main font-semibold">#</span>
             {value.slice(1)}
           </span>

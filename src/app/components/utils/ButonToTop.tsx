@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const ButtonToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -18,7 +19,6 @@ const ButtonToTop = () => {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-  // Fonction pour remonter en haut
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -30,9 +30,16 @@ const ButtonToTop = () => {
     isVisible && (
       <button
         onClick={scrollToTop}
-        className="fixed bottom-5 right-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 shadow-md hover:-translate-y-2 duration-300 shadow-black px-3 rounded-full border bg-dark border-main"
+        className="fixed bottom-5 animate-float-icons right-5 text-white  py-2 px-2 rounded-full border shadow shadow-black bg-[#faeee1] dark:bg-black border-main"
         aria-label="Back to Top">
-        👆
+        <Image
+          src="/portfolio-logo.png"
+          alt="Logo"
+          className="rotate-180"
+          width={20}
+          height={20}
+          quality={100}
+        />
       </button>
     )
   );
