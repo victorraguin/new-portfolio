@@ -1,10 +1,29 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
+import { motion } from "framer-motion";
 
-import Image from "next/image";
-import EmailIcon from "../Icons/email.svg";
 const ContactSection = () => {
+  const staggerContainer = {
+    initial: {},
+    animate: {
+      transition: {
+        staggerChildren: 0.4,
+      },
+    },
+  };
+
+  const fadeInUp = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+  };
   return (
-    <div className="flex flex-col md:pt-20 px-6 space-y-6 lg:w-3/4 xl:w-full pt-10">
+    <motion.div
+      className="flex flex-col md:pt-20 px-6 space-y-6 lg:w-3/4 xl:w-full pt-10"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+      variants={staggerContainer}
+      >
       <h2
         className="text-xl md:text-2xl font-semibold md:mb-2 lg:w-3/4"
         id="contact">
@@ -15,14 +34,14 @@ const ContactSection = () => {
         <div className="flex w-3/4 bg-main h-[2px] mt-1"></div>
       </h2>
       <div className="flex xl:flex-row justify-evenly flex-col space-y-6 xl:space-y-0">
-        <p className="pt-5 lg:w-1/2 w-full 2xl:w-1/2 xl:w-1/2">
+        <motion.p
+          className="pt-5 lg:w-1/2 w-full 2xl:w-1/2 xl:w-1/2"
+          variants={fadeInUp}>
           I am actively seeking a{" "}
           <strong className="underline">long-term</strong>, permanent position.
-          I am particularly interested in roles that offer stability and the
-          opportunity to develop and advance within the company. Should you have
-          any questions or require further information, please do not hesitate
-          to contact me.
-        </p>
+          I am particularly interested in roles that offer <strong className="underline">stability</strong> and the
+          opportunity to develop and advance within the company.
+        </motion.p>
         <div className="flex flex-col space-y-2 self-center border border-gray p-4 shadow-md shadow-black">
           <a
             className="flex flex-row items-center  space-x-4 group w-fit"
@@ -66,7 +85,7 @@ const ContactSection = () => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

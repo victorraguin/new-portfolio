@@ -1,7 +1,10 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import Modal from "../Modal/ProjectModal";
+import ProjectCard from "./ProjectCard";
+import { Project } from "../../types/Project";
 import IconNextJs from "../Icons/IconNextjs";
 import IconTailwind from "../Icons/IconTailwind";
 import IconAwsAmplify from "../Icons/IconAwsamplify";
@@ -10,8 +13,6 @@ import IconVercel from "../Icons/IconVercel";
 import IconSupabase from "../Icons/IconSupabase";
 import IconMedusajs from "../Icons/IconMedusaJS";
 import IconFigma from "../Icons/IconFigma";
-import ProjectCard from "./ProjectCard";
-import { Project } from "../../types/Project";
 
 const ProjectsSection = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -21,6 +22,7 @@ const ProjectsSection = () => {
     setSelectedProject(project);
     setModalOpen(true);
   };
+
   const closeModal = () => {
     setSelectedProject(undefined);
     setModalOpen(false);
@@ -129,6 +131,26 @@ const ProjectsSection = () => {
     },
   ];
 
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.4,
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
     <div className="flex flex-col md:pt-20 px-6 space-y-6 lg:w-3/4 xl:w-full">
       <h2
@@ -137,29 +159,36 @@ const ProjectsSection = () => {
         #<strong className="text-main btn-shine">projects</strong>
         <div className="flex w-3/4 bg-main h-[2px] mt-1"></div>
       </h2>
-      <div className="flex flex-row flex-wrap justify-around pt-10 w-full">
-        {projectsData.map((project) => (
-          <ProjectCard
+      <motion.div
+        className="flex flex-row flex-wrap justify-around pt-10 w-full"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+        variants={container}
+        >
+        {projectsData.map((project, index) => (
+          <motion.div
             key={project.name}
-            project={project}
-            openModal={openModal}
-          />
+            variants={item}
+            className="w-full sm:w-1/2 md:w-1/3 p-2">
+            <ProjectCard project={project} openModal={openModal} />
+          </motion.div>
         ))}
-        {selectedProject && (
-          <Modal
-            title={selectedProject.name}
-            description={selectedProject.description}
-            imageUrl={selectedProject.image}
-            logoUrl={selectedProject.logo}
-            urlLink={selectedProject.urlLink}
-            githubLink={selectedProject.githubLink}
-            youtubeLink={selectedProject.youtubeLink}
-            isOpen={modalOpen}
-            onClose={closeModal}
-            technologies={selectedProject.technologies}
-          />
-        )}
-      </div>
+      </motion.div>
+      {selectedProject && (
+        <Modal
+          title={selectedProject.name}
+          description={selectedProject.description}
+          imageUrl={selectedProject.image}
+          logoUrl={selectedProject.logo}
+          urlLink={selectedProject.urlLink}
+          githubLink={selectedProject.githubLink}
+          youtubeLink={selectedProject.youtubeLink}
+          isOpen={modalOpen}
+          onClose={closeModal}
+          technologies={selectedProject.technologies}
+        />
+      )}
       <Link href="#aboutme" className="self-center pt-10">
         <div className="arrow cursor-pointer">
           <span></span>

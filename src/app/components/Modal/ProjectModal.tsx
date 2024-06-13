@@ -34,7 +34,7 @@ const Modal: React.FC<ModalProps> = ({
       onClick={() => onClose()}>
       <div
         onClick={(e) => e.stopPropagation()}
-        className="flex flex-col rounded-xl bg-[#ffe7ce] shadow-md shadow-black dark:bg-[#1b1b1b] w-[90%] xl:w-1/2 h-fit p-8 relative">
+        className="flex flex-col rounded-xl bg-[#ffe7ce] shadow-md shadow-black dark:bg-[#131313] w-[90%] xl:w-1/2 h-fit p-8 relative">
         <button
           onClick={onClose}
           className="absolute top-2 right-5 text-lg dark:text-main text-black hover:text-main">
@@ -94,7 +94,7 @@ const Modal: React.FC<ModalProps> = ({
           <div className="flex flex-col md:flex-row h-full pt-4 space-y-4">
             <div className="sm:w-3/4 mx-1">
               <h1 className="text-xl text-main">{title}</h1>
-              <p className="text-base sm:max-h-56 overflow-y-auto">
+              <p className="text-base overflow-y-auto">
                 {description}
               </p>
             </div>
