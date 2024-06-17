@@ -33,7 +33,7 @@ const ProjectsSection = () => {
       name: "My Portfolio",
       description:
         "Hey! Here’s my portfolio, built with Next.js 14 and Tailwind CSS, and deployed on Vercel. I coded everything myself, starting from a design inspired by Figma. I customized the CSS styles, created modals, and tweaked everything to make it cool and functional. Loved having the freedom to do it my way!",
-      image: "/PORTFOLIO.png",
+      image: "/static/portfolio.png",
       logo: "/portfolio-logo.png",
       urlLink: "https://example.com/project1",
       githubLink: "https://github.com/victorraguin/new-portfolio",
@@ -49,7 +49,7 @@ const ProjectsSection = () => {
       name: "SKULT Landing Page",
       description:
         "I worked on the landing page for the SKULT Alpha launch, designed in collaboration with a designer. We used Framer Motion for animations that really made a nice effect! For the tech part, I used NextJS 13, Figma, and Tailwind CSS, and deployed it all on Amplify. Great to work on this project and nail that nice effect!",
-      image: "/SKULT.png",
+      image: "/static/skult.png",
       logo: "/skult-logo.png",
       urlLink:
         "https://ex-skult-landingpage-ghk873zed-victorraguins-projects.vercel.app",
@@ -84,7 +84,7 @@ const ProjectsSection = () => {
       name: "IA Image Gallery",
       description:
         "I've set up a website for an AI-generated image gallery, linked to my side project 'FAYA Productions'. I built the backend with Supabase and managed the front-end with Next JS 14 and Tailwind CSS, deployed on Vercel. The plan is to potentially print these images on posters automatically through a supplier. It's both a tech and creative venture!",
-      image: "/IAGallery.png",
+      image: "/static/iagallery.png",
       logo: "/iagallery-logo.png",
       urlLink:
         "https://ia-image-gallery-2ua7kca94-victorraguins-projects.vercel.app/",
@@ -101,7 +101,7 @@ const ProjectsSection = () => {
       name: "FAYA Productions Store",
       description:
         "I'm blending my love for reggae music and tech at 'FAYA Productions', a website currently under construction. Using AI to create reggae-inspired designs, I've started a business selling t-shirts and sweatshirts. The backend is powered by Medusa JS, handling product listings and variants, with payments through PayPal. A unique fusion of culture and technology!",
-      image: "/FAYA 2.png",
+      image: "/static/faya.png",
       logo: "/faya-logo.png",
       urlLink: "https://example.com/project3",
       githubLink: "",
@@ -117,7 +117,7 @@ const ProjectsSection = () => {
       name: "ORIGINS Website",
       description:
         "I worked on a website for a friend involved in the conservation and repair of agricultural lands. The project was never completed, but I designed it on Figma and built it using NextJS 13 and Tailwind CSS, deployed on Vercel. The aim was to create a simple and minimalist site.",
-      image: "/ORIGINS.png",
+      image: "/static/origins.png",
       logo: "/origins-logo.png",
       urlLink: "https://elodierg.vercel.app/",
       githubLink: "https://github.com/victorraguin/elodierg",

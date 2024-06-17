@@ -114,7 +114,7 @@ const Modal: React.FC<ModalProps> = ({
             <Image
               src={imageUrl}
               alt={title}
-              className="hidden sm:flex self-center mt-10 shadow-md shadow-black border-main/50 border rounded-2xl"
+              className="hidden sm:flex self-center mt-10 shadow-md shadow-black border-main/50 border rounded-2xl max-h-52 2xl:max-h-none object-cover"
               width={400}
               height={400}
               quality={100}
