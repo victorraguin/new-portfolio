@@ -103,7 +103,7 @@ const ProjectsSection = () => {
         "I'm blending my love for reggae music and tech at 'FAYA Productions', a website currently under construction. Using AI to create reggae-inspired designs, I've started a business selling t-shirts and sweatshirts. The backend is powered by Medusa JS, handling product listings and variants, with payments through PayPal. A unique fusion of culture and technology!",
       image: "/static/faya.png",
       logo: "/faya-logo.png",
-      urlLink: "https://example.com/project3",
+      urlLink: "",
       githubLink: "",
       inConstruction: true,
       technologies: [
@@ -130,7 +130,7 @@ const ProjectsSection = () => {
       ],
     },
   ];
-
+  
   const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {

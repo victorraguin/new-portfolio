@@ -34,7 +34,39 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  openGraph: {
+    title: "Victor Raguin's | Front-End Developer in Next.js & Tailwind CSS",
+    description:
+      "Welcome to Victor Raguin's portfolio, a passionate and experienced front-end developer specialized in crafting modern and responsive user interfaces with Next.js and Tailwind CSS. Explore his achievements and projects.",
+    url: "https://victorraguin.com",
+    siteName: "Victor Raguin Portfolio",
+    images: [
+      {
+        url: "https://www.victor-raguin.fr/static/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Victor Raguin Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Victor Raguin's | Front-End Developer in Next.js & Tailwind CSS",
+    description:
+      "Welcome to Victor Raguin's portfolio, a passionate and experienced front-end developer specialized in crafting modern and responsive user interfaces with Next.js and Tailwind CSS. Explore his achievements and projects.",
+    images: [
+      {
+        url: "https://www.victor-raguin.fr/static/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Victor Raguin Portfolio",
+      },
+    ],
+  },
 };
+
 
 export default function RootLayout({
   children,
