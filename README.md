@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio
 
-## Getting Started
+Bienvenue sur mon **Portfolio**, un site personnel conçu pour présenter mes projets, mes compétences et mon parcours professionnel. Le site est construit avec les technologies web modernes pour une expérience fluide et interactive.
 
-First, run the development server:
+## 🚀 Technologies utilisées
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Front-end :** React.js, Next.js 14.1.0 (App Router)
+- **Animations :** Framer Motion 11.2.10
+- **Style :** Tailwind CSS 3.3.0
+
+---
+
+## 📦 Installation
+
+1. **Cloner le dépôt :**
+
+   ```bash
+   git clone https://github.com/votre-utilisateur/portfolio.git
+   cd portfolio
+   ```
+
+2. **Installer les dépendances :**
+
+   ```bash
+   pnpm install
+   ```
+
+3. **Lancer le projet en développement :**
+
+   ```bash
+   pnpm dev
+   ```
+
+4. **Construire pour la production :**
+
+   ```bash
+   pnpm build
+   ```
+
+5. **Démarrer l'application en production :**
+   ```bash
+   pnpm start
+   ```
+
+---
+
+## 🧩 Structure du projet
+
+```
+portfolio/
+├── src/
+│   ├── app/               # Structure basée sur l'App Router de Next.js
+│   ├── components/        # Composants réutilisables
+│   ├── types/             # Types TypeScript
+│   ├── utils/             # Fonctions utilitaires
+├── public/                # Ressources statiques
+├── package.json           # Dépendances du projet
+├── README.md              # Documentation du projet
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Scripts disponibles
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **`pnpm dev` :** Lancer le projet en développement
+- **`pnpm build` :** Construire le projet pour la production
+- **`pnpm start` :** Démarrer le projet en production
+- **`pnpm lint` :** Lancer l'analyse statique ESLint
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🖋️ Contribution
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Les contributions sont les bienvenues ! Suivez ces étapes pour proposer des modifications :
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. **Forkez le projet**
+2. **Créez une nouvelle branche :** `git checkout -b feature/ma-nouvelle-fonctionnalite`
+3. **Apportez vos changements et commitez-les :** `git commit -m 'Ajout de ma nouvelle fonctionnalité'`
+4. **Poussez votre branche sur GitHub :** `git push origin feature/ma-nouvelle-fonctionnalite`
+5. **Ouvrez une Pull Request**
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛡️ Licence
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Ce projet est sous licence **MIT**. Consultez le fichier `LICENSE` pour plus d'informations.
+
+---
+
+## 📞 Support
+
+Pour toute question ou suggestion, ouvrez une issue sur le dépôt GitHub.
+
+**Merci de visiter mon Portfolio !** 🎉
