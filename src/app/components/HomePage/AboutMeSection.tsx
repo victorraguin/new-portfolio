@@ -69,8 +69,8 @@ const AboutMeSection = () => {
           <ul className='list-disc pl-5'>
             <motion.li variants={item}>
               <strong className='text-main  w-fit'>Main</strong> front-end
-              developer for 1.5 years, enhancing my expertise in various modern
-              web technologies{' '}
+              developer, enhancing my expertise in various modern web
+              technologies{' '}
               <strong className='text-main italic w-fit text-sm'>
                 (React JS, NextJS, Tailwind CSS, GraphQL, REST APIs).
               </strong>
