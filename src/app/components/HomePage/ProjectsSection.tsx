@@ -230,7 +230,11 @@ const ProjectsSection = () => {
           technologies={selectedProject.technologies}
         />
       )}
-      <Link href='#aboutme' className='self-center pt-10'>
+      <Link
+        href='#aboutme'
+        className='self-center pt-10'
+        aria-label='Go to about me section'
+      >
         <div className='arrow cursor-pointer'>
           <span></span>
         </div>
